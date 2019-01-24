@@ -1,0 +1,63 @@
+{
+  "id": "e7ceca5c-53e8-4bec-8b5d-9f8dad44d82f",
+  "version": "2.0",
+  "name": "TestHooq",
+  "url": "https://wooow.hooq.tv",
+  "tests": [{
+    "id": "569d6661-7be0-4bf1-bbf2-1c23795f7ad6",
+    "name": "test",
+    "commands": [{
+      "id": "fc122df9-3af9-409f-aa22-d4ced61ca746",
+      "comment": "",
+      "command": "open",
+      "target": "/welcome",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1962e7c-0e4a-4ecc-8b70-51f67dd54024",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1328x781",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e345eeee-c779-4e21-8f6a-d186022d1943",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=English",
+      "targets": [
+        ["linkText=English", "linkText"],
+        ["css=.nav-link", "css:finder"],
+        ["xpath=//section[@id='welcome-mount']/div/nav/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6277a266-6556-4cfb-a003-858e9928b016",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Bahasa Indonesia",
+      "targets": [
+        ["linkText=Bahasa Indonesia", "linkText"],
+        ["css=.dropdown-item:nth-child(1)", "css:finder"],
+        ["css=a.dropdown-item", "css"],
+        ["xpath=//a[contains(text(),'Bahasa Indonesia')]", "xpath:link"],
+        ["xpath=//section[@id='welcome-mount']/div/nav/ul/li/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/welcome?lc=ind')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "be1a7fb3-b611-445f-9918-c0cd4cafd68b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["569d6661-7be0-4bf1-bbf2-1c23795f7ad6"]
+  }],
+  "urls": ["https://wooow.hooq.tv/"],
+  "plugins": []
+}
